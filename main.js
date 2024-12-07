@@ -351,7 +351,7 @@ function animate() {
 
     const MAX_ANGLE = 10 * Math.PI / 180; // 20 degrees in radians
     const T = 3; // oscillation period in seconds
-    const rotation_angle = MAX_ANGLE * Math.sin(2 * Math.PI * animation_time / T);
+    const rotation_angle = MAX_ANGLE * Math.sin(2* Math.PI * animation_time / T);
 
     let model_transformation = new THREE.Matrix4();
   
@@ -415,3 +415,5 @@ function onKeyPress(event) {
           console.log(`Key ${event.key} pressed`);
   }
 }
+
+
